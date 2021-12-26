@@ -1,0 +1,13 @@
+prefix=/home/kasra/anaconda3/envs/wine-project
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+modules=1
+
+Name: libXML
+Version: 2.9.12
+Description: libXML library version2.
+Requires:
+Libs: -L${libdir} -lxml2
+Libs.private: -L/home/kasra/anaconda3/envs/wine-project/lib -licui18n -licuuc -licudata -lpthread -L/home/kasra/anaconda3/envs/wine-project/lib -lz -L/home/kasra/anaconda3/envs/wine-project/lib -llzma -L/home/kasra/anaconda3/envs/wine-project/lib -lm  
+Cflags: -I${includedir}/libxml2 -I/home/kasra/anaconda3/envs/wine-project/include 

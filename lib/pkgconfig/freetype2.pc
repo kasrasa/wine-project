@@ -1,0 +1,14 @@
+prefix=/home/kasra/anaconda3/envs/wine-project
+exec_prefix=/home/kasra/anaconda3/envs/wine-project
+libdir=/home/kasra/anaconda3/envs/wine-project/lib
+includedir=/home/kasra/anaconda3/envs/wine-project/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 24.0.18
+Requires:
+Requires.private: zlib, libpng
+Libs: -L${libdir} -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2
